@@ -67,7 +67,7 @@ Sendo assim, o protocolo desse projeto foi baseado em quatro definições:
         - msg de texto contendo a informação entre os pares (*peers*) comunicantes.
       
 2. Definição da **Sintaxe/Formato** das mensagens trocadas.
-    - mensagens trocadas em formato **JSON**, determinando o tipo de *operação* em um dos campos e seus possíveis estados (*status*), como segue:
+    - mensagens trocadas em formato **JSON**, determinando o tipo de *operação* em um dos campos e seus possíveis estados (*status*):
 ![](sintaxe1.png)
 ![](sintaxe2.png)
     - primeiro byte das mensagens, atuando como identificador do tamanho da mensagem, para correta reserva de conexão pelo TCP.
