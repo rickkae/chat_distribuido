@@ -71,7 +71,7 @@ Sendo assim, o protocolo desse projeto foi baseado em quatro definições:
 ![](sintaxe1.png)
 ![](sintaxe2.png)
     - primeiro byte das mensagens, atuando como identificador do tamanho da mensagem, para correta reserva de conexão pelo TCP.
-3. Definição do **como** e **quando** os processos deviam trocar mensagens.
+3. Definição de **regras** do **como** e **quando** os processos deviam trocar mensagens.
 ![](regras-comunicacao.png)
 4. Definição do protocolo de camada de transporte usado pelas aplicações: TCP
 
