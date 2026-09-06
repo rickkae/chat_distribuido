@@ -18,7 +18,7 @@ em *peer-to-peer (p2p)*.
 
 A figura abaixo ilustra a arquitetura da rede especificada.
 
-![](arquitetura-rede-chat-distribuido.png)
+![](arq-rede-chat-distribuido.png)
 
 A comunicação entre o **Servidor Central** com as aplicações de **Usuário** foram feitas sob arquitetura 
 *Cliente-Servidor*, que responde informações de conexão para um dado usuário requisitante. Com tais informações, os usuários
@@ -28,8 +28,8 @@ podem se conectar entre si, via arquitetura *peer-to-peer* para trocar mensagens
 
 #### Funcionamento.
 
-A aplicação desenvolvida possui uma interface *CLI*, baseada em linha de comandos, que executam em quaisquer *terminais Linux*, 
-sob o uso de cores para distinguir mensagens de texto entre usuários, controle e conexão.
+A aplicação desenvolvida, lembra os bate-papo *mIRC* nos *old-days*, contando com uma interface *CLI*, baseada em linhas de comandos, 
+que executam em quaisquer *terminais Linux*, sob o uso de cores para distinguir mensagens de texto (entre usuários), controle e conexão.
 
 A animação abaixo, mostra o funcionamento do **Servidor Central**, gerenciando a comunicação entre dois usuários que se conectam (Alice e Bob). 
 
