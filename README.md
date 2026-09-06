@@ -5,7 +5,7 @@
 Este projeto implementa uma simples aplicação de *chat*, desenvolvida com *sockets* e *threads* no Python3,
 para a turma de Sistemas Distribuídos da UFRJ, pelo curso de Ciência da Computação, no ano de 2022.
 
-O projeto consistia de duas aplicações: 
+O projeto consistia de dois programas: 
 1. Um **Servidor Central (SC)** para registrar **usuários** e fornecer informações de conexão entre aplicações.
    (`ServidorCentral.py`)
 3. Uma Aplicação de **Usuário** para envio e recebimento de mensagens com **Servidor Central** e entre **usuários**.
