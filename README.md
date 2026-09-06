@@ -41,8 +41,8 @@ distribuída, isto é, com parte do processamento distribuído entre diferentes 
 Para ilustrar esse funcionamento distribuído, as figuras a seguir, exibem a aplicação desse projeto se comunicando com outras aplicações de Usuário
 definidas por outros grupos. 
 
-![](outros-grupos.png)
-![](app-grupo.png)
+![](Outros-grupos.png)
+![](App-grupo.png)
 
 (!) O **Servidor Central** usado na comunicação presente nas figuras acima, foi aquele implementado pelo grupo do **Rufino** - um aluno da turma.
 
