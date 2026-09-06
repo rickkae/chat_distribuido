@@ -7,7 +7,9 @@ para a turma de Sistemas Distribuídos da UFRJ, pelo curso de Ciência da Comput
 
 O projeto consistia de duas aplicações: 
 1. Um **Servidor Central (SC)** para registrar **usuários** e fornecer informações de conexão entre aplicações.
-2. Uma Aplicação de **Usuário** para envio e recebimento de mensagens com **Servidor Central** e entre **usuários**.
+   (`ServidorCentral.py`)
+3. Uma Aplicação de **Usuário** para envio e recebimento de mensagens com **Servidor Central** e entre **usuários**.
+   (`Usuario.py`)
 
 Ambas aplicações foram implementadas de formas diferentes por diferentes grupos da turma. Logo, consistiam de
 diferentes arquiteturas de Software, porém todas com o mesmo objetivo de se comunicarem entre si. 
@@ -29,7 +31,7 @@ podem se conectar entre si, via arquitetura *peer-to-peer* para trocar mensagens
 #### Funcionamento.
 
 A aplicação desenvolvida, lembra os bate-papo *mIRC* nos *old-days*, contando com uma interface *CLI*, baseada em linhas de comandos, 
-que executam em quaisquer *terminais Linux*, sob o uso de cores para distinguir mensagens de texto (entre usuários), controle e conexão.
+que executam em quaisquer *terminais Linux*, sob o uso de cores (realizadas em `RichTextOnTerminal.py`) para distinguir mensagens de texto (entre usuários), controle e conexão.
 
 A animação abaixo, mostra o funcionamento do **Servidor Central**, gerenciando a comunicação entre dois usuários que se conectam (Alice e Bob) e
 trocam mensagens.
