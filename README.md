@@ -31,12 +31,13 @@ podem se conectar entre si, via arquitetura *peer-to-peer* para trocar mensagens
 A aplicação desenvolvida, lembra os bate-papo *mIRC* nos *old-days*, contando com uma interface *CLI*, baseada em linhas de comandos, 
 que executam em quaisquer *terminais Linux*, sob o uso de cores para distinguir mensagens de texto (entre usuários), controle e conexão.
 
-A animação abaixo, mostra o funcionamento do **Servidor Central**, gerenciando a comunicação entre dois usuários que se conectam (Alice e Bob). 
+A animação abaixo, mostra o funcionamento do **Servidor Central**, gerenciando a comunicação entre dois usuários que se conectam (Alice e Bob) e
+trocam mensagens.
 
 ![](chdistribuido.gif)
 
 Na animação, todo processamento é realizado em um mesmo computador (HOST: 192.168.0.11), porém a aplicação é desenvolvida para funcionar de forma
-distribuída, isto é, com parte do processamento distribuído entre diferentes máquinas e mensagens sendo trocadas em redes.
+distribuída, isto é, com parte do processamento distribuído entre diferentes máquinas e mensagens sendo trocadas pela rede.
 
 Para ilustrar esse funcionamento distribuído, as figuras a seguir, exibem a aplicação desse projeto se comunicando com outras aplicações de Usuário
 definidas por outros grupos. 
@@ -46,14 +47,14 @@ definidas por outros grupos.
 
 (!) O **Servidor Central** usado na comunicação presente nas figuras acima, foi aquele implementado pelo grupo do **Rufino** - um aluno da turma.
 
+#### Protocolo Especificado. 
+Para viabilizar a comunicação entre as diferentes aplicações de Usuário (implementações cliente do projeto) entre si e com **Servidor Central**,
+um protocolo de comunicação entre aplicações foi estabelecido.
 
+>  Um protocolo define o formato e a ordem das mensagens trocadas entre duas ou mais entidades comunicantes, bem como as ações realizadas na transmissão e/ou no recebimento de uma mensagem ou outro evento (KUROSE, 6th)
 
+Sendo assim, o protocolo desse projeto foi baseado em quatro definições. Foram elas:
 
-#### Protocolo Especificado.
-
->  Um protocolo (KUROSE, 6th)
-
-O protocolo consistia de quatro definições:
 1. Definição do **tipo** de mensagens trocadas.
    * Comunicação Usuário (cliente) - Servidor:
      - msg de requisição/resposta para **registrar usuários**
@@ -61,10 +62,14 @@ O protocolo consistia de quatro definições:
      - msg de requisição/resposta para **encerrar conexão**
 
     * Comunicação Usuário - Usuário:
-     - msg de texto contendo a informação
-2. Definição da **Sintaxe/Formato** das mensagens trocadas
-3. Definição do **como** e **quando** os processos deviam trocar mensagens.
-4. Definição do protocolo de camada de transporte usado pelas aplicações: TCP
+     - msg de texto contendo a informação entre os pares (*peers*) comunicantes.
+      
+2. Definição da **Sintaxe/Formato** das mensagens trocadas.
+    - mensagens trocadas em formato **JSON**, determinando o tipo de *operação* em um dos campos, como segue:
+![](sintaxe1.png)
+![](sintaxe2.png)
+4. Definição do **como** e **quando** os processos deviam trocar mensagens.
+5. Definição do protocolo de camada de transporte usado pelas aplicações: TCP
 
 A arquitetura de rede dos 
 
