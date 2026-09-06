@@ -11,7 +11,7 @@ O projeto consistia de dois programas:
 3. Uma Aplicação de **Usuário** para envio e recebimento de mensagens com **Servidor Central** e entre **usuários**.
    (`Usuario.py`)
 
-Ambas aplicações foram implementadas de formas diferentes por diferentes grupos da turma. Logo, consistiam de
+Ambos programas foram implementados de formas diferentes por diferentes grupos da turma. Logo, consistiam de
 diferentes arquiteturas de Software, porém todas com o mesmo objetivo de se comunicarem entre si. 
 
 Desse jeito, tanto um protocolo de comunicação foi estabelecido pelo instrutor(a) em aula, bem como uma arquitetura
