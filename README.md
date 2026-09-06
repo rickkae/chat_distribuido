@@ -33,7 +33,7 @@ que executam em quaisquer *terminais Linux*, sob o uso de cores para distinguir 
 
 A animação abaixo, mostra o funcionamento do **Servidor Central**, gerenciando a comunicação entre dois usuários que se conectam (Alice e Bob). 
 
-![](chat-distribuido.gif)
+![](cdistribuido.gif)
 
 Na animação, todo processamento é realizado em um mesmo computador (HOST: 192.168.0.11), porém a aplicação é desenvolvida para funcionar de forma
 distribuída, isto é, com parte do processamento distribuído entre diferentes máquinas e mensagens sendo trocadas em redes.
