@@ -53,7 +53,7 @@ um protocolo de comunicação entre aplicações foi estabelecido.
 
 >  Um protocolo define o formato e a ordem das mensagens trocadas entre duas ou mais entidades comunicantes, bem como as ações realizadas na transmissão e/ou no recebimento de uma mensagem ou outro evento (KUROSE, 6th)
 
-Sendo assim, o protocolo desse projeto foi baseado em quatro definições. Foram elas:
+Sendo assim, o protocolo desse projeto foi baseado em quatro definições:
 
 1. Definição do **tipo** de mensagens trocadas.
    * Comunicação Usuário (cliente) - Servidor:
@@ -68,10 +68,11 @@ Sendo assim, o protocolo desse projeto foi baseado em quatro definições. Foram
     - mensagens trocadas em formato **JSON**, determinando o tipo de *operação* em um dos campos, como segue:
 ![](sintaxe1.png)
 ![](sintaxe2.png)
+    - primeiro byte das mensagens, atuando como identificador do tamanho da mensagem
 4. Definição do **como** e **quando** os processos deviam trocar mensagens.
+![](regras-comunicacao.png)
 5. Definição do protocolo de camada de transporte usado pelas aplicações: TCP
 
-A arquitetura de rede dos 
 
 
 
