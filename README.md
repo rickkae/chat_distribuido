@@ -64,7 +64,7 @@ Sendo assim, o protocolo desse projeto foi baseado em quatro definições:
      - msg de requisição/resposta para **encerrar conexão**
 
     * Comunicação Usuário - Usuário:
-     - msg de texto contendo a informação entre os pares (*peers*) comunicantes.
+        - msg de texto contendo a informação entre os pares (*peers*) comunicantes.
       
 2. Definição da **Sintaxe/Formato** das mensagens trocadas.
     - mensagens trocadas em formato **JSON**, determinando o tipo de *operação* em um dos campos, como segue:
