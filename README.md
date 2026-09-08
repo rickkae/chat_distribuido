@@ -42,7 +42,7 @@ Na animação, todo processamento é realizado em um mesmo computador (HOST: 192
 distribuída, isto é, com parte do processamento distribuído entre diferentes máquinas e mensagens sendo trocadas pela rede.
 
 Para ilustrar esse funcionamento distribuído, as figuras a seguir, exibem a aplicação desse projeto se comunicando com outras aplicações de Usuário
-definidas por outros grupos. 
+desenvolvidas por outros grupos. 
 
 ![](Outros-grupos.png)
 ![](App-grupo.png)
